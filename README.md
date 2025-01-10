@@ -1,1 +1,0 @@
-# mv_dev_design.github.io
