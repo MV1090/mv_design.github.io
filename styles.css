@@ -9,25 +9,59 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #aed8c4;
+    color:#fff;
 }
 
 /* Header styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    font-family: "Gilda Display", serif;    
+    background: #a0a2a2;      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;    
+    padding: 20px; 
+    opacity:0; 
+    transition: opacity 1s ease;
 }
 
-header h1 {
-    margin: 0;
+header.visible{
+    opacity: 1;
 }
+
+.header.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/* The content section containing the title and buttons at the bottom */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px; /* Adjust bottom spacing as needed */
+    padding: 0 20px;
+    color: #323232;  
+  }
+  
+  /* Page title alignment to the left */
+  .page-title {
+    margin: 0px  10px;
+    flex-grow: 1;
+    font-size: 50px;
+  }
 
 /* Navigation styling */
 nav ul {
-    list-style-type: none;
+    list-style-type: none;    
+    text-align: right;
 }
 
 nav ul li {
@@ -36,12 +70,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    font-size: 30px;
+    color: #323232;  
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #aed8c4;
 }
 
 /* Section styling */
@@ -60,6 +96,6 @@ section h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #a0a2a2;
     color: #fff;
 }
