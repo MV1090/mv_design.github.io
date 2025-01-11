@@ -9,8 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #aed8c4;
-    color:#fff;
+    background-color:#a0a2a2; 
+    color: #323232; 
 }
 
 /* Header styles */
@@ -84,12 +84,12 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: #aed8c4;
     border-radius: 8px;
 }
 
 section h2 {
-    color: #333;
+    color: #323232; 
 }
 
 /* Footer styling */
@@ -97,5 +97,5 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #a0a2a2;
-    color: #fff;
+    color: #323232; 
 }
