@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Example: A simple greeting in the console
     const pageTitle = document.title;
     console.log("You are currently viewing the " + pageTitle + " page.");
-    const header = document.querySelector('header');
-    header.classList.add('visible');
 });
+
+window.onload = function() {
+    const header = document.querySelector('.header');
+    header.classList.add('visible');
+  };
+  
