@@ -119,3 +119,30 @@ footer {
     background-color: #a0a2a2;
     color: #323232; 
 }
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;    
+    text-decoration: none;
+    text-align: center;    
+    border-radius: 50%
+}
