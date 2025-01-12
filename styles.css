@@ -28,6 +28,10 @@ header {
     transition: opacity 1s ease-in;
 }
 
+.header.email{
+    align-items: center;
+}
+
 header.visible{
     opacity: 1;
 }
@@ -107,6 +111,7 @@ section h1 {
     font-size: 40px;
 }
 
+
 #home.demo-reel{
     max-width: 100%;
     height: auto;
@@ -121,7 +126,7 @@ footer {
 }
 
 .fa:hover {
-    opacity: 0.9;
+    opacity: 0.4;
 }
 
 .fa-linkedin {
@@ -129,20 +134,17 @@ footer {
     color: white;
 }
 
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
-    color: white;
+.fa-github {
+    background: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .fa {
-    padding: 10px;
-    font-size: 20px;    
+    padding: 15px;
+    width: 65px;
+    height: auto;
+    font-size: 30px;    
     text-decoration: none;
     text-align: center;    
-    border-radius: 50%
+    border-radius: 30%    
 }
