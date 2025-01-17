@@ -104,8 +104,7 @@ section {
     align-items: center;
 }
 
-section h1 {
-    margin-top: 25px;
+section h2 {    
     color: #323232; 
     text-align: center;
     font-size: 40px;
@@ -152,3 +151,25 @@ footer {
 div.socials{
     margin-bottom: 10px;
 }
+
+.DownloadButton{        
+    margin-top: 25px;     
+    text-align: center;     
+}
+
+.DownloadButton a{
+    color: #a0a2a2;
+    text-decoration: none;    
+    width: 300px;
+    padding: 10px 30px;
+    font-size: 30px; 
+    background:  #323232; 
+    border-radius: 15px 15px 15px 15px;   
+}
+
+.DownloadButton a:hover{
+    color: #aed8c4; 
+    text-decoration: underline;
+}
+
+
