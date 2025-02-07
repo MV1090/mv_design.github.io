@@ -93,13 +93,13 @@ section {
     position: relative;
     padding: 20px; 
     background-color: #aed8c4;    
-    /* opacity:0; 
-    transition: opacity 1s ease-in;    */
+    opacity:0; 
+    transition: opacity 1s ease-in;   
 }
 
-/* section.visible{
+section.visible{
     opacity:1;
-} */
+}
 
 .video iframe { 
     margin-top: 35px; 
