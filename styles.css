@@ -92,8 +92,14 @@ section {
     align-items: center;
     position: relative;
     padding: 20px; 
-    background-color: #aed8c4;      
+    background-color: #aed8c4;    
+    /* opacity:0; 
+    transition: opacity 1s ease-in;    */
 }
+
+/* section.visible{
+    opacity:1;
+} */
 
 .video iframe { 
     margin-top: 35px; 
@@ -175,23 +181,25 @@ div.socials{
 .carousel-view {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    align-items: center;
     position: relative;
     width: 100%;    
 }
 
 /* Style for each carousel item */
 .item-list {
-     display: none; /*Initially hide all items*/
-     flex: 100%; /*Each item takes 100% of the container width */     
+     display: none; 
+     flex: 100%;
 }
 
 /* Show only the first item initially */
 .item-list.active {
-    display: block;    
-    justify-content: center
-}
+    display: block; 
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
 
 /* Button Styling */
 .scroll-button {
@@ -221,6 +229,27 @@ div.socials{
     right: 0;   
 }
 
+.project-section{
+    display: flex;  
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .project-description{
 
+}
+
+.project-images{
+    display: flex; 
+    flex-direction:column;    
+    background: #323232; 
+    padding: 30px 30px;
+    border-radius: 15px 15px 15px 15px;     
+    margin-left: 50px;
+}
+
+.project-thumbnails{
+    display: flex;  
+    flex-direction: row;
 }

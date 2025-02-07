@@ -36,4 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
 window.onload = function() {
     const header = document.querySelector('.header');
     header.classList.add('visible');
+    const section = document.querySelector('.section');
+    section.classList.add('visible');
   };
