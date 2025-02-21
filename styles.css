@@ -210,7 +210,7 @@ div.socials{
     font-family: "Gilda Display", serif; 
     text-decoration: none;    
     width: 150px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 25px; 
     background:  #323232; 
     border-radius: 15px 15px 15px 15px;   
@@ -223,7 +223,8 @@ div.socials{
 }
 
 #prev {
-    left: 0;    
+    left: 0;  
+    text-align: center;   
 }
 
 #next {
@@ -240,6 +241,7 @@ div.socials{
 .project-description{
     word-wrap: break-word;
     white-space: normal;
+    font-size: 20px; 
 }
 
 .project-images{
