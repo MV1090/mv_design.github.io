@@ -237,13 +237,15 @@ div.socials{
 }
 
 .project-description{
-
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .project-images{
     display: flex; 
     flex-direction:column;    
     background: #323232; 
+    height:fit-content;
     padding: 30px 30px;
     border-radius: 15px 15px 15px 15px;     
     margin-left: 50px;
