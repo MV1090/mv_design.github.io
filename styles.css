@@ -209,9 +209,9 @@ div.socials{
     color: #a0a2a2;
     font-family: "Gilda Display", serif; 
     text-decoration: none;    
-    width: 200px;
+    width: 150px;
     padding: 10px 30px;
-    font-size: 30px; 
+    font-size: 25px; 
     background:  #323232; 
     border-radius: 15px 15px 15px 15px;   
 }
@@ -246,9 +246,21 @@ div.socials{
     flex-direction:column;    
     background: #323232; 
     height:fit-content;
+    width:fit-content;
     padding: 30px 30px;
     border-radius: 15px 15px 15px 15px;     
     margin-left: 50px;
+}
+.project-video{
+    display: flex; 
+    flex-direction:column;    
+    background: #323232; 
+    height:fit-content;
+    width:fit-content;
+    padding: 30px 30px;
+    border-radius: 15px 15px 15px 15px;     
+    margin-left: 50px;
+    margin: 50px;
 }
 
 .project-thumbnails{
