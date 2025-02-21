@@ -214,6 +214,7 @@ div.socials{
     font-size: 25px; 
     background:  #323232; 
     border-radius: 15px 15px 15px 15px;   
+    cursor: pointer;
 }
 
 .scroll-button:hover{
@@ -265,5 +266,14 @@ div.socials{
 
 .project-thumbnails{
     display: flex;  
-    flex-direction: row;
+    flex-direction: row;    
+}
+
+.thumbnail{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
 }

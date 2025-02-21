@@ -30,6 +30,29 @@ document.addEventListener('DOMContentLoaded', function() {
             items[currentIndex].classList.add('active'); // Show previous item
         });
     }
+
+    // Select all project containers (you can use class or id to target)
+    const projectContainers = document.querySelectorAll('.project-images');
+    
+    projectContainers.forEach(project => {
+        // Get the main image for this specific project container
+        const mainImage = project.querySelector('.main-image');
+        
+        // Get all thumbnails within this container
+        const thumbnails = project.querySelectorAll('.thumbnail');
+        
+        var temp;
+        // Add click event listeners to each thumbnail
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                // Swap the source of the main image to the clicked thumbnail's source
+                temp = mainImage.src;
+                mainImage.src = thumbnail.src;
+                thumbnail.src = temp;
+            });
+        });
+    });
+
 });
 
 
