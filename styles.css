@@ -515,10 +515,6 @@ footer p {
     border-radius: 10px;
 }
 
-.project-images{
-    padding-top: 0;
-}
-
 .main-image {
     padding-top: 5px;
     border-radius: 15px;
@@ -565,7 +561,7 @@ footer p {
     }
 
     .thumbnail {
-        width: 24.25%;  /* Smaller thumbnails on small screens */
+        width: 24%;  /* Smaller thumbnails on small screens */
         height: 66px;
     }
 
@@ -599,7 +595,7 @@ footer p {
     }
 
     .thumbnail {
-        width: 24.25%;  /* Resize thumbnails for very small screens */
+        width: 24%;  /* Resize thumbnails for very small screens */
         height: 80px;
     }
 
