@@ -323,10 +323,10 @@ footer p {
 
 .about-content{
     word-wrap: break-word;
-    white-space: normal;      
+    white-space: normal;
     font-weight: bold;
     width: 750px;;
-    margin: 50px;    
+    margin: 50px;
 }
 
 .about-image{
@@ -393,7 +393,7 @@ footer p {
 
 @media (max-width: 480px) {
     .about-content {
-        font-size: 18px;        
+        font-size: 18px;
     }
 
     .about-image img {
@@ -457,19 +457,19 @@ footer p {
 .item-list.active {
     display: block;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
  }
 
 .project-section{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;    
-    margin-top: 50px;
-    margin-bottom: 50px;
+    align-items: flex-start;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
     gap: 50px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .project-section p{
@@ -489,10 +489,10 @@ footer p {
     background: #323232;
     height:100%;
     width: 100%;
-    max-width: 550px;    
-    padding: 5px;    
+    max-width: 550px;
+    padding: 5px;
     border-radius: 15px;
-    margin-left: 50px;    
+    margin-left: 50px;
     margin-bottom: 20px;
 }
 
@@ -502,7 +502,7 @@ footer p {
     background: #323232;
     height:auto;
     width: 100%;
-    max-width: 550px;    
+    max-width: 550px;
     padding: 5px;
     border-radius: 15px;
     margin-left: 50px;
@@ -526,7 +526,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;     
+    flex-wrap: wrap;
 }
 
 .thumbnail{
@@ -620,7 +620,7 @@ footer p {
     justify-content: space-between;  /* Space between buttons */
     align-items: center;
     width: 100%;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .scroll-button {

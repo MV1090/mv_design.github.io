@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Show the first item initially
     if (items.length > 0) {
         items[currentIndex].classList.add('active');
+        // items[currentIndex].scrollIntoView({
+        //     behavior: 'smooth',  // Smooth scrolling effect
+        //     block: 'start'       // Aligns the element to the top of the viewport
+        // });
     }
     
     // "Next" button functionality
@@ -17,14 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
         nextButton.addEventListener('click', function() {
             items[currentIndex].classList.remove('active'); // Hide current item
             currentIndex = (currentIndex + 1) % items.length; // Loop to first item after last
-            items[currentIndex].classList.add('active'); // Show next item
-            window.scrollTo({
-                top: 0,  // Scroll to the top of the page
-                left: 0,  // No horizontal scroll
-                // behavior: 'smooth'  // Optional: Adds smooth scrolling animation
-            });
+            items[currentIndex].classList.add('active'); // Show next item          
+            items[currentIndex].scrollIntoView({                
+                block: 'start'       // Aligns the element to the top of the viewport
+            });  
         });
-    }
+    }    
+   
 
     // "Previous" button functionality
     const prevButton = document.getElementById('prev');
@@ -32,12 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
         prevButton.addEventListener('click', function() {
             items[currentIndex].classList.remove('active'); // Hide current item
             currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop to last item after first
-            items[currentIndex].classList.add('active'); // Show previous item
-            window.scrollTo({
-                top: 0,  // Scroll to the top of the page
-                left: 0,  // No horizontal scroll
-                behavior: 'smooth'  // Optional: Adds smooth scrolling animation
-            });
+            items[currentIndex].classList.add('active'); // Show previous item          
+            items[currentIndex].scrollIntoView({                
+                block: 'start'       // Aligns the element to the top of the viewport
+            }); 
         });
     }
 
