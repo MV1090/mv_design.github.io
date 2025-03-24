@@ -614,33 +614,47 @@ footer p {
     width: 100%;
 }
 
-/* Button Styling */
+.button-container{
+    display: flex;
+    flex-direction: row;  /* Arrange buttons side by side */
+    justify-content: space-between;  /* Space between buttons */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; 
+}
+
 .scroll-button {
-    margin-top: 25px;
     text-align: center;
-    position:absolute;
     color: #a0a2a2;
     font-family: "Gilda Display", serif;
     text-decoration: none;
-    width: 150px;
     padding: 10px 20px;
-    font-size: 25px;
-    background:  #323232;
-    border-radius: 15px 15px 15px 15px;
+    font-size: 20px;  /* Adjusted font size for better responsiveness */
+    background: #323232;
+    border-radius: 15px;
     cursor: pointer;
+    width: 100%;  /* Make the button take full width within the container */
+    max-width: 150px;  /* Cap the width at 150px */
+    margin: 0 10px;  /* Adds space between the buttons */
 }
+
 
 .scroll-button:hover{
     color: #aed8c4;
     text-decoration: underline;
 }
 
-#prev {
-    left: 0;
-    text-align: center;
+
+@media (max-width: 768px) {
+    scroll-button {
+        font-size: 18px;  /* Adjust button size */
+        width: 125px;  /* Adjust button width */
+    }
 }
 
-#next {
-    right: 0;
+@media (max-width: 480px) {
+    scroll-button {
+        font-size: 16px;  /* Even smaller button text */
+        width: 100px;  /* Smaller button width */
+    }
 }
-

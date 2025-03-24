@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
             items[currentIndex].classList.remove('active'); // Hide current item
             currentIndex = (currentIndex + 1) % items.length; // Loop to first item after last
             items[currentIndex].classList.add('active'); // Show next item
+            window.scrollTo({
+                top: 0,  // Scroll to the top of the page
+                left: 0,  // No horizontal scroll
+                // behavior: 'smooth'  // Optional: Adds smooth scrolling animation
+            });
         });
     }
 
@@ -28,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
             items[currentIndex].classList.remove('active'); // Hide current item
             currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop to last item after first
             items[currentIndex].classList.add('active'); // Show previous item
+            window.scrollTo({
+                top: 0,  // Scroll to the top of the page
+                left: 0,  // No horizontal scroll
+                behavior: 'smooth'  // Optional: Adds smooth scrolling animation
+            });
         });
     }
 
