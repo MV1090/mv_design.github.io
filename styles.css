@@ -446,15 +446,7 @@ footer p {
 
 /* #endregion DownloadButton */
 
-.carousel-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-}
-
+/* #region Projects */
 /* Style for each carousel item */
 .item-list {
      display: none;
@@ -468,6 +460,164 @@ footer p {
     margin-top: 50px;
     margin-bottom: 50px;
  }
+
+.project-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+.project-section p{
+    text-align: left;
+}
+
+.project-description{
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.project-images{
+    display: flex;
+    flex-direction:column;
+    background: #323232;
+    height:100%;
+    width: 100%;
+    max-width: 550px;    
+    padding: 5px;    
+    border-radius: 15px;
+    margin-left: 50px;    
+    margin-bottom: 20px;
+}
+
+.project-video{
+    display: flex;
+    flex-direction:column;
+    background: #323232;
+    height:auto;
+    width: 100%;
+    max-width: 550px;    
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin: 50px;
+}
+
+.project-video iframe{
+    height: 450px; /* Fixed height, relative to width */
+    border: 5px solid #333; /* 5px wide, solid border with dark color */
+    border-radius: 10px;
+}
+
+.project-images{
+    padding-top: 0;
+}
+
+.main-image {
+    padding-top: 5px;
+    border-radius: 15px;
+    width: 100%;  /* Make the image responsive */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.project-thumbnails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    
+}
+
+.thumbnail{
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 24.25%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .project-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;  /* Center align items */
+    }
+
+    .project-images, .project-video {
+        max-width: 100%;  /* Full width on small screens */
+        margin-left: 0;  /* Remove left margin on small screens */
+        margin-right: 0;  /* Remove right margin on small screens */
+    }
+
+    .project-thumbnails {
+        justify-content: center;  /* Center thumbnails on small screens */
+    }
+
+    .thumbnail {
+        width: 24.25%;  /* Smaller thumbnails on small screens */
+        height: 66px;
+    }
+
+    .main-image {
+        width: 100%;  /* Ensure the main image is responsive */
+        height: auto;
+    }
+
+    .project-description {
+        font-size: 18px;  /* Adjust font size on smaller screens */
+    }
+
+    .project-video iframe {
+        height: 350px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-description {
+        font-size: 16px;  /* Further reduce font size for very small screens */
+    }
+
+    .main-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-thumbnails {
+        flex-direction: column;  /* Stack thumbnails vertically on very small screens */
+        align-items: center;
+    }
+
+    .thumbnail {
+        width: 24.25%;  /* Resize thumbnails for very small screens */
+        height: 80px;
+    }
+
+    .project-video iframe {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+
+/* #endregion Projects */
+
+.carousel-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
 
 /* Button Styling */
 .scroll-button {
@@ -498,58 +648,4 @@ footer p {
 #next {
     right: 0;
 }
-
-.project-section{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.project-section p{
-    text-align: left;
-}
-
-.project-description{
-    word-wrap: break-word;
-    white-space: normal;
-    font-size: 20px;
-}
-
-.project-images{
-    display: flex;
-    flex-direction:column;
-    background: #323232;
-    height:fit-content;
-    width:fit-content;
-    padding: 30px 30px;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 50px;
-}
-.project-video{
-    display: flex;
-    flex-direction:column;
-    background: #323232;
-    height:fit-content;
-    width:fit-content;
-    padding: 30px 30px;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 50px;
-    margin: 50px;
-}
-
-.project-thumbnails{
-    display: flex;
-    flex-direction: row;
-}
-
-.thumbnail{
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.thumbnail:hover{
-    transform: scale(1.1);
-}
-
 
