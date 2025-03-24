@@ -335,7 +335,7 @@ footer p {
     background: #323232;
     height:fit-content;
     width:fit-content;
-    margin: 50px;
+    margin: 60px;
     border-radius: 15px;
     box-sizing: border-box;
 }
@@ -504,6 +504,10 @@ footer p {
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.project-section p{
+    text-align: left;
 }
 
 .project-description{
