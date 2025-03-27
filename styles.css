@@ -531,8 +531,14 @@ footer p {
     max-width: 510px;
     padding: 5px;
     border-radius: 15px;
-    margin-left: 50px;
-    
+    margin-left: 50px;    
+    align-items: center;
+}
+
+.controls-image {
+    max-width: 100%;    
+    height: auto;      
+    margin: 5px 0;      
 }
 
 .project-thumbnails{
