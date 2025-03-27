@@ -522,6 +522,19 @@ footer p {
     height: auto;  /* Maintain aspect ratio */
 }
 
+.controls-container{
+    display: flex;
+    flex-direction:column;
+    background: #323232;
+    height:auto;
+    width: 100%;
+    max-width: 510px;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 50px;
+    
+}
+
 .project-thumbnails{
     display: flex;
     flex-direction: row;
@@ -549,11 +562,13 @@ footer p {
         align-items: center;  /* Center align items */
     }
 
-    .project-images, .project-video {
+    .project-images, .project-video, .controls-container {
         max-width: 100%;  /* Full width on small screens */
         margin-left: 0;  /* Remove left margin on small screens */
         margin-right: 0;  /* Remove right margin on small screens */
     }
+
+
 
     .project-thumbnails {
         justify-content: center;  /* Center thumbnails on small screens */
