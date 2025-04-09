@@ -7,34 +7,31 @@
 
 /* Basic styling for the body */
 body {
-    font-family: "Gilda Display", serif;
+    font-family: "Aptos (Body)", sans-serif;
     line-height: 1.6;
-    background-color:#a0a2a2;
-    color: #323232;
+    background-color:#323232;
+    color: #e8ecf4;
 }
 
 /* #region Header*/
 /* Header styles */
 header {
-    font-family: "Gilda Display", serif;
-    background: #a0a2a2;
+    font-family: "Orbitron", sans-serif;
+    background: #e8ecf4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding-top: 30px;
     opacity:0;
     transition: opacity 1s ease-in;
 }
 
-/* .header.email{
-    align-items: center;
-} */
-
 .email {
-    text-align: center;
+    color: #264276;
+    align-self: flex-start;
     margin-top: 10px;
     font-size: 1.2rem;
 }
@@ -43,83 +40,107 @@ header.visible{
     opacity: 1;
 }
 
-.logo img {
-    width: 100%; /* Make logo responsive */
-    max-width: 280px; /* Maximum width */
-    height: auto;
+.logo {
+    /* position: relative;  */
+    align-self: flex-end;
+    margin-left: auto;
+    
+    /* align-items: center;  */
 }
 
-/* .header.logo {
-    position: absolute;
-    top: 50%;
+.logo img {
+    width: 50%; /* Make logo responsive */
+    max-width: 140px; /* Maximum width */
+    height: auto;
+    position: relative; /* Position it relative to the parent */
     left: 50%;
-    transform: translate(-50%, -50%);
-} */
+    transform: translateX(-50%); /* Move it back by 50% of its own width */
+}
 
 /* The content section containing the title and buttons at the bottom */
 .header-content {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    display: flex;    
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: relative;
+    flex-wrap: wrap;
+    /* position: relative; */
     bottom: 0px; /* Adjust bottom spacing as needed */
-    padding: 0 20px;
     color: #323232;
 }
-.page-title {
-    margin: 10px;
-    font-size: 3rem;
-    text-align: left;
+
+.name-job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    flex: 1;
 }
 
+.header-name {
+    color: #264276;
+    font-size: 3rem;
+   
+}
 
-  /* Page title alignment to the left */
-/* .page-title {
-    margin: 0px  10px;
-    flex-grow: 1;
-    font-size: 50px;
-  } */
+.header-role {
+    color: #323232;
+    font-size: 2rem;
+    
+}
 
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
 /* Navigation styling */
 nav ul {
+
     list-style-type: none;
-    /* text-align: right; */
     text-align: center;
 }
 
 nav ul li {
+    align-self: flex-end;
     display: inline;
     margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    /* font-size: 30px; */
     font-size: 1.5rem;
     color: #323232;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #aed8c4;
+    color: #264276;;
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        padding: 10px;
-    }
-
-    .page-title {
+        text-align: center;
+      }
+    
+      .logo {
+        order: 1 /* push logo to the right */
+      }    
+      
+    .header-name {
         font-size: 2rem; /* Adjust title size on small screens */
+    }
+    .header-role {
+        font-size: 1rem;
     }
 
     nav ul li a {
+        
         font-size: 1.2rem; /* Adjust link size */
     }
 
@@ -130,12 +151,24 @@ nav ul li a:hover {
 
 /* Media Query for Mobile Screens */
 @media (max-width: 480px) {
-    .page-title {
-        font-size: 1.5rem; /* Adjust title size further for very small screens */
+    .header-name {
+        font-size: 2rem; /* Adjust title size further for very small screens */
+    }
+    .header-role {
+        font-size: 1rem;
+    }
+
+    .logo {                
+        align-items: center; 
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        display: block; /* Stack navigation links vertically */
+       display: block; /*Stack navigation links vertically */
         margin: 10px 0;
     }
 
@@ -155,7 +188,7 @@ section {
     align-items: center;
     position: relative;
     padding: 20px;
-    background-color: #aed8c4;
+    background-color: #323232;
     opacity:0;
     transition: opacity 1s ease-in;
 }
@@ -163,15 +196,6 @@ section {
 section.visible{
     opacity:1;
 }
-
-/* .video iframe {
-    margin-top: 35px;
-    width: 800px;
-    height: 455px;
-    border: 5px solid #333;
-    border-radius: 10px;
-    align-items: center;
-} */
 
 .video {
     width: 100%; /* Ensure the video container spans the full width */
@@ -185,14 +209,13 @@ section.visible{
     width: 100%; /* Make video responsive */
     /* max-width: 800px; Maximum width */
     height: 450px; /* Fixed height, relative to width */
-    border: 5px solid #333; /* 5px wide, solid border with dark color */
+    border: 5px solid #264276; /* 5px wide, solid border with dark color */
     border-radius: 10px;
 }
 
 section h2 {
-    color: #323232;
+    color: #e8ecf4;
     text-align: center;
-    /* font-size: 40px; */
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -239,9 +262,10 @@ section p {
 
 /* Footer styling */
 footer {
+    font-family: "Orbitron", sans-serif;
     text-align: center;
     padding: 10px;
-    background-color: #a0a2a2;
+    background-color: #e8ecf4;
     color: #323232;
     position: relative;
 }
@@ -260,15 +284,6 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-/* .fa {
-    padding: 15px;
-    width: 65px;
-    height: auto;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 30%
-} */
 
 .fa {
     padding: 15px;
@@ -426,7 +441,7 @@ footer p {
 }
 
 .DownloadButton a:hover{
-    color: #aed8c4;
+    color: #264276;
     text-decoration: underline;
 }
 
@@ -531,14 +546,14 @@ footer p {
     max-width: 510px;
     padding: 5px;
     border-radius: 15px;
-    margin-left: 50px;    
+    margin-left: 50px;
     align-items: center;
 }
 
 .controls-image {
-    max-width: 100%;    
-    height: auto;      
-    margin: 5px 0;      
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
 }
 
 .project-thumbnails{
@@ -662,7 +677,7 @@ footer p {
 
 
 .scroll-button:hover{
-    color: #aed8c4;
+    color: #264276;
     text-decoration: underline;
 }
 
