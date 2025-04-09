@@ -7,17 +7,17 @@
 
 /* Basic styling for the body */
 body {
-    font-family: "Gilda Display", serif;
+    font-family: "Aptos (Body)", sans-serif;
     line-height: 1.6;
-    background-color:#a0a2a2;
-    color: #323232;
+    background-color:#323232;
+    color: #e8ecf4;
 }
 
 /* #region Header*/
 /* Header styles */
 header {
-    font-family: "Gilda Display", serif;
-    background: #a0a2a2;
+    font-family: "Consolas", serif;
+    background: #e8ecf4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,12 +29,9 @@ header {
     transition: opacity 1s ease-in;
 }
 
-/* .header.email{
-    align-items: center;
-} */
-
 .email {
-    text-align: center;
+    color: #264276;
+    align-self: flex-start;
     margin-top: 10px;
     font-size: 1.2rem;
 }
@@ -43,54 +40,59 @@ header.visible{
     opacity: 1;
 }
 
-.logo img {
-    width: 100%; /* Make logo responsive */
-    max-width: 280px; /* Maximum width */
-    height: auto;
+.logo {
+    position: relative; /* Make the parent element relative */
+    width: 100%;
+    align-items: center; /* Center the content horizontally */
 }
 
-/* .header.logo {
-    position: absolute;
-    top: 50%;
+.logo img {
+    width: 50%; /* Make logo responsive */
+    max-width: 140px; /* Maximum width */
+    height: auto;
+    position: relative; /* Position it relative to the parent */
     left: 50%;
-    transform: translate(-50%, -50%);
-} */
+    transform: translateX(-50%); /* Move it back by 50% of its own width */
+}
 
 /* The content section containing the title and buttons at the bottom */
 .header-content {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    flex-direction: column;    
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: relative;
-    bottom: 0px; /* Adjust bottom spacing as needed */
-    padding: 0 20px;
+    bottom: 0px; /* Adjust bottom spacing as needed */    
     color: #323232;
 }
-.page-title {
-    margin: 10px;
+.header-name {
+    color: #264276;
     font-size: 3rem;
     text-align: left;
 }
 
+.header-role {
+    color: #323232;
+    font-size: 2rem;
+    text-align: left;
+}
 
-  /* Page title alignment to the left */
-/* .page-title {
-    margin: 0px  10px;
-    flex-grow: 1;
-    font-size: 50px;
-  } */
-
+.buttons{
+    display: flex;    
+       
+    justify-content: space-between;
+    width: 100% 
+}
 /* Navigation styling */
 nav ul {
-    list-style-type: none;
-    /* text-align: right; */
+    
+    list-style-type: none;    
     text-align: center;
 }
 
 nav ul li {
+    align-self: flex-end;
     display: inline;
     margin: 0 10px;
 }
@@ -104,7 +106,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #aed8c4;
+    color: #264276;;
 }
 
 /* Media Query for Smaller Screens */
@@ -115,8 +117,11 @@ nav ul li a:hover {
         padding: 10px;
     }
 
-    .page-title {
+    .header-name {
         font-size: 2rem; /* Adjust title size on small screens */
+    }
+    .header-role {
+        font-size: 1rem;
     }
 
     nav ul li a {
@@ -130,8 +135,11 @@ nav ul li a:hover {
 
 /* Media Query for Mobile Screens */
 @media (max-width: 480px) {
-    .page-title {
-        font-size: 1.5rem; /* Adjust title size further for very small screens */
+    .header-name {
+        font-size: 2rem; /* Adjust title size further for very small screens */
+    }
+    .header-role {
+        font-size: 1rem;
     }
 
     nav ul li {
@@ -155,7 +163,7 @@ section {
     align-items: center;
     position: relative;
     padding: 20px;
-    background-color: #aed8c4;
+    background-color: #323232;
     opacity:0;
     transition: opacity 1s ease-in;
 }
@@ -163,15 +171,6 @@ section {
 section.visible{
     opacity:1;
 }
-
-/* .video iframe {
-    margin-top: 35px;
-    width: 800px;
-    height: 455px;
-    border: 5px solid #333;
-    border-radius: 10px;
-    align-items: center;
-} */
 
 .video {
     width: 100%; /* Ensure the video container spans the full width */
@@ -260,15 +259,6 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-/* .fa {
-    padding: 15px;
-    width: 65px;
-    height: auto;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 30%
-} */
 
 .fa {
     padding: 15px;
@@ -426,7 +416,7 @@ footer p {
 }
 
 .DownloadButton a:hover{
-    color: #aed8c4;
+    color: #264276;
     text-decoration: underline;
 }
 
@@ -662,7 +652,7 @@ footer p {
 
 
 .scroll-button:hover{
-    color: #aed8c4;
+    color: #264276;
     text-decoration: underline;
 }
 
