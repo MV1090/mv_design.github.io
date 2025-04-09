@@ -16,7 +16,7 @@ body {
 /* #region Header*/
 /* Header styles */
 header {
-    font-family: "Consolas", serif;
+    font-family: "Orbitron", sans-serif;
     background: #e8ecf4;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ header {
     align-items: center;
     position: relative;
     width: 100%;
-    padding: 20px;
+    padding-top: 30px;
     opacity:0;
     transition: opacity 1s ease-in;
 }
@@ -41,9 +41,11 @@ header.visible{
 }
 
 .logo {
-    position: relative; /* Make the parent element relative */
-    width: 100%;
-    align-items: center; /* Center the content horizontally */
+    /* position: relative;  */
+    align-self: flex-end;
+    margin-left: auto;
+    
+    /* align-items: center;  */
 }
 
 .logo img {
@@ -57,37 +59,46 @@ header.visible{
 
 /* The content section containing the title and buttons at the bottom */
 .header-content {
-    display: flex;
-    flex-direction: column;    
+    display: flex;    
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: relative;
-    bottom: 0px; /* Adjust bottom spacing as needed */    
+    flex-wrap: wrap;
+    /* position: relative; */
+    bottom: 0px; /* Adjust bottom spacing as needed */
     color: #323232;
 }
+
+.name-job{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    flex: 1;
+}
+
 .header-name {
     color: #264276;
     font-size: 3rem;
-    text-align: left;
+   
 }
 
 .header-role {
     color: #323232;
     font-size: 2rem;
-    text-align: left;
+    
 }
 
 .buttons{
-    display: flex;    
-       
+    display: flex;
     justify-content: space-between;
-    width: 100% 
+    width: 100%
 }
 /* Navigation styling */
 nav ul {
-    
-    list-style-type: none;    
+
+    list-style-type: none;
     text-align: center;
 }
 
@@ -99,7 +110,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    /* font-size: 30px; */
     font-size: 1.5rem;
     color: #323232;
 }
@@ -113,10 +123,15 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        padding: 10px;
-    }
-
+        text-align: center;
+      }
+    
+      .logo {
+        order: 1 /* push logo to the right */
+      }    
+      
     .header-name {
         font-size: 2rem; /* Adjust title size on small screens */
     }
@@ -125,6 +140,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
+        
         font-size: 1.2rem; /* Adjust link size */
     }
 
@@ -142,8 +158,17 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
+    .logo {                
+        align-items: center; 
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul li {
-        display: block; /* Stack navigation links vertically */
+       display: block; /*Stack navigation links vertically */
         margin: 10px 0;
     }
 
@@ -184,14 +209,13 @@ section.visible{
     width: 100%; /* Make video responsive */
     /* max-width: 800px; Maximum width */
     height: 450px; /* Fixed height, relative to width */
-    border: 5px solid #333; /* 5px wide, solid border with dark color */
+    border: 5px solid #264276; /* 5px wide, solid border with dark color */
     border-radius: 10px;
 }
 
 section h2 {
-    color: #323232;
+    color: #e8ecf4;
     text-align: center;
-    /* font-size: 40px; */
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -238,9 +262,10 @@ section p {
 
 /* Footer styling */
 footer {
+    font-family: "Orbitron", sans-serif;
     text-align: center;
     padding: 10px;
-    background-color: #a0a2a2;
+    background-color: #e8ecf4;
     color: #323232;
     position: relative;
 }
@@ -521,14 +546,14 @@ footer p {
     max-width: 510px;
     padding: 5px;
     border-radius: 15px;
-    margin-left: 50px;    
+    margin-left: 50px;
     align-items: center;
 }
 
 .controls-image {
-    max-width: 100%;    
-    height: auto;      
-    margin: 5px 0;      
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
 }
 
 .project-thumbnails{
