@@ -49,19 +49,19 @@ header.visible{
 }
 
 .logo img {
-    width: 50%; /* Make logo responsive */
+    width: 100%; /* Make logo responsive */
     max-width: 140px; /* Maximum width */
     height: auto;
     position: relative; /* Position it relative to the parent */
     left: 50%;
-    transform: translateX(-50%); /* Move it back by 50% of its own width */
+    transform: translateX(-60%); /* Move it back by 50% of its own width */
 }
 
 /* The content section containing the title and buttons at the bottom */
 .header-content {
     display: flex;    
     justify-content: space-between;
-    align-items: center;
+    
     width: 100%;
     flex-wrap: wrap;
     /* position: relative; */
@@ -76,12 +76,12 @@ header.visible{
     justify-content: center;
     text-align: center;  
     flex: 1;
+    transform: translateX(3.5%);
 }
 
 .header-name {
     color: #264276;
-    font-size: 3rem;
-   
+    font-size: 3rem;   
 }
 
 .header-role {
