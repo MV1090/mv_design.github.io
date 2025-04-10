@@ -77,7 +77,8 @@ header.visible{
     justify-content: center;
     text-align: center;  
     flex: 1;
-    transform: translateX(3.5);
+    left: 50%;
+    transform: translateX(4%);
 }
 
 .header-name {
@@ -237,6 +238,26 @@ section.visible{
     width: 100%; /* Make video responsive */
     /* max-width: 800px; Maximum width */
     height: 450px; /* Fixed height, relative to width */
+    border: 5px solid #264276; /* 5px wide, solid border with dark color */
+    border-radius: 10px;
+}
+
+.project-container{
+    width: 100%; /* Ensure the video container spans the full width */
+    max-width: 800px; /* Maximum width to match iframe */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the iframe within the container */
+    background-color: #264276;
+    border-radius: 10px;
+    color: #e8ecf4;
+}
+
+.title-images{
+    margin-top: 5px;
+    width: 100%; /* Make video responsive */
+    /* max-width: 800px; Maximum width */
+    height: auto; /* Fixed height, relative to width */
     border: 5px solid #264276; /* 5px wide, solid border with dark color */
     border-radius: 10px;
 }
