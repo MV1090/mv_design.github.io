@@ -42,7 +42,7 @@ header.visible{
 
 .logo {
     /* position: relative;  */
-    align-self: flex-end;
+    
     margin-left: auto;
     
     /* align-items: center;  */
@@ -59,11 +59,10 @@ header.visible{
 
 /* The content section containing the title and buttons at the bottom */
 .header-content {
-    display: flex;    
-    justify-content: space-between;
-    
+    display: flex;        
+    justify-content: space-between;    
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* position: relative; */
     bottom: 0px; /* Adjust bottom spacing as needed */
     color: #323232;
@@ -125,18 +124,36 @@ nav ul li a:hover {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        text-align: center;
-      }
+        text-align: center;        
+    }
     
-      .logo {
-        order: 1 /* push logo to the right */
-      }    
-      
+    .logo {        
+        margin-left:0;
+        left: 0%;        
+        transform: translateX(3.5%);
+        order: 1;
+    }    
+
+    .name-job {
+        order: 2;
+        flex: 1;
+    }
+
     .header-name {
         font-size: 2rem; /* Adjust title size on small screens */
     }
+
     .header-role {
         font-size: 1rem;
+    }
+
+    .buttons{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        order: 1;      
     }
 
     nav ul li a {
@@ -145,6 +162,7 @@ nav ul li a:hover {
     }
 
     .email {
+        order: 2;
         font-size: 1rem; /* Smaller email font size */
     }
 }
@@ -163,11 +181,13 @@ nav ul li a:hover {
     }
 
     .buttons{
+        
         flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
+        order: 1;
        display: block; /*Stack navigation links vertically */
         margin: 10px 0;
     }
