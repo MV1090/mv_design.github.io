@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+   
+
     // Select all project containers (you can use class or id to target)
     const projectContainers = document.querySelectorAll('.project-images');
     
@@ -65,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
-
 
 window.onload = function() {
     const header = document.querySelector('.header');
