@@ -332,6 +332,15 @@ section p {
     font-size: 2rem;   
 }
 
+section p strong {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+section ul{
+    font-size: 1.5rem;
+}
+
 /* For smaller screens, adjust video size and text */
 @media (max-width: 768px) {
     .video iframe {
@@ -348,6 +357,15 @@ section p {
 
     .summary-title{    
         font-size: 1.5rem;   
+    }
+
+    section ul{
+        font-size: 1rem;
+    }
+
+    section p strong {
+        font-weight: bold;
+        font-size: 1rem;
     }
 }
 
@@ -367,6 +385,15 @@ section p {
 
     .summary-title{    
         font-size: 1.2rem;   
+    }
+
+    section ul{
+        font-size: 0.8rem;
+    }
+
+    section p strong {
+        font-weight: bold;
+        font-size: 0.8rem;
     }
 }
 
@@ -676,7 +703,7 @@ footer p {
 .thumbnail{
     cursor: pointer;
     transition: transform 0.3s;
-    width: 24.25%;
+    width: 24%;
     height: 90px;
     object-fit: cover;
     border-radius: 15px;
